@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cour C++</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        section{
+            height: 100vh;
+            background: linear-gradient(to top,#2305c7,#00c4ff);
+            
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            position: relative;
+            width: 310px;
+            height: 150px;
+            font-size: 70px; /* Taille de la lettre */
+            font-weight: bold;
+            background-color: #2305c7;
+            border-radius: 10%;
+            top:10px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgb(0,0,128); /* Couleur de la lettre */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+      
+        #particles{
+            width: 100%;
+            height: 100%;
+        }
+        .fishc{
+            position: absolute;
+        }
+        .fishc1{
+            top: 30%;
+            height: 100px;
+            animation: animate 20s linear infinite;
+        }
+        .fishc2{
+            top: 50%;
+            height: 100px;
+            animation: animate2 25s linear infinite;
+        }
+        .fishc3{
+            top: 70%;
+            height: 90px;
+            animation: animate 30s linear infinite;
+        }
+        .fishc4{
+            top: 25%;
+            height: 90px;
+            animation: animate2 35s linear infinite;
+        }
+        .fishc5{
+            top: 70%;
+            height: 60px;
+            animation: animate2 38s linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                transform: translateY(-50px);
+                left: -25%;
+            }
+            25%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(50px);
+            }
+            75%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-50px);
+                left: 150%;
+            }
+            
+            
+
+        }
+        @keyframes animate2{
+            0%{
+                transform: translateY(-50px);
+                right: -25%;
+            }
+            25%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(50px);
+            }
+            75%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-50px);
+                right: 150%;
+            }
+            
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div id="particles">
+            <a href="assets/pdf et mp3/Chap_1_Notions_de_base.pdf">
+           <img src="assets/images/fishcpp1.png" class="fishc fishc1">
+        </a>
+        <a href="assets/pdf et mp3/Chap_1_Notions_de_base.pdf">
+           <img src="assets/images/fishcpp2.png" class="fishc fishc2">
+        </a>
+        <a href="assets/pdf et mp3/Resume-Cpp.pdf">
+           <img src="assets/images/fishcpp3.png" class="fishc fishc3">
+        </a>
+        <a href="">
+           <img src="assets/images/fishcpp4.png" class="fishc fishc4">
+        </a>
+        <a href="https://www.youtube.com/watch?v=-TkoO8Z07hI">
+           <img src="assets/images/fishcpp5.png" class="fishc fishc5">
+        </a>
+        <div class="logo">
+            
+            <div class="letter">language C++</div>
+        </div>
+        </div>
+       
+    </section>
+    <script type="text/javascript" src="assets/js/particles.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

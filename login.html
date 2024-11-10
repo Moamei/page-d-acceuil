@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulaire de Connexion & Inscription</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+  <script>
+
+    function validatePassword() {
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirmPassword").value;
+      if (password !== confirmPassword) {
+        alert("Les mots de passe ne correspondent pas.");
+        return false;  // Empêche la soumission du formulaire
+      }
+
+      
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="check">
+
+    
+    <div class="login form">
+      <header>Connexion</header>
+      <form action="#">
+        <input type="text" placeholder="Entrez votre email">
+        <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required>
+        <input type="password" placeholder="Entrez votre mot de passe">
+        <a href="#">Mot de passe oublié ?</a>
+        <input type="submit" class="button" value="Se connecter"> <!-- Utilisation de submit -->
+      </form>
+      <div class="signup">
+        <span class="signup">Vous n'avez pas de compte ? 
+          <label for="check">S'inscrire</label>
+        </span>
+      </div>
+    </div>
+    
+   
+    <div class="registration form">
+      <header>Inscription</header>
+      <form action="#" onsubmit="return validatePassword()">
+        <input type="text" placeholder="Entrez votre email">
+        <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required>
+        <input type="password" id="password" placeholder="Créez un mot de passe" required>
+        <input type="password" id="confirmPassword" placeholder="Confirmez votre mot de passe" required>
+        
+       
+        <label for="userType">Type :</label>
+        <select id="userType" name="userType">
+          <option value="etudiant">Étudiant</option>
+          <option value="enseignant">Enseignant</option>
+          <option value="administrateur">Administrateur</option>
+        </select>
+        
+        <input type="submit" class="button" value="S'inscrire">
+      </form>
+      <div class="signup">
+        <span class="signup">Vous avez déjà un compte ? 
+          <label for="check">Se connecter</label>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
